@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<script src="keyboard.js"></script>
+		<style>
+			.divButtons{
+				width:10%;
+				height:100%;
+				margin:0 auto;
+				border:0;
+				float:left;
+			}
+			.textareaClass{
+				border:0;
+				resize: none;
+				height:90%;
+				width:98.9%;
+			}
+			button{
+			
+			margin:0 auto;
+				width:100%;
+				height:100%;
+				border:0;
+			}
+			.borderClass1{
+				 box-sizing:border-box;
+				-moz-box-sizing:border-box;
+				-webkit-box-sizing:border-box;
+				border-left:1px solid green;
+			}	
+			.borderClass2{
+				 box-sizing:border-box;
+				-moz-box-sizing:border-box;
+				-webkit-box-sizing:border-box;
+				border-left:1px solid green;
+				border-right:1px solid green;
+			}	
+			.borderClass3{
+				 box-sizing:border-box;
+				-moz-box-sizing:border-box;
+				-webkit-box-sizing:border-box;
+				border-left:1px solid green;
+				border-bottom:1px solid green;
+				border-top:1px solid green;
+			}	
+			.borderClass4{
+				 box-sizing:border-box;
+				-moz-box-sizing:border-box;
+				-webkit-box-sizing:border-box;
+				border-left:1px solid green;
+				border-bottom:1px solid green;
+				border-top:1px solid green;
+				border-right:1px solid green;
+			}	
+			.theWholeKeyboardClass{
+				width:40%;
+				height:200px;
+				float:left;
+				margin-left:27%;
+				}
+			.resultDiv{
+				width:40%;
+				height:200px;
+				margin-bottom:3px;
+				margin-left:27%;
+			}	
+			.wholeLine{
+				width:100%;
+				height:20%;
+			} 	
+		
+		</style>
+		
+		</head>
+		<body>
+			<div class="resultDiv borderClass4">
+				<ul></ul>
+			</div>
+			<div class="theWholeKeyboardClass" id="theWholeKeyboard">
+				<div class="wholeLine borderClass4" id="line1">
+					<textarea class="textareaClass" id="textarea"></textarea>
+				</div>
+				<div class="wholeLine" id="line2">
+					<div class="divButtons"><button class="borderClass1" id="k1" onclick="whenButtonIsClickd(event)">1</button></div>
+					<div class="divButtons"><button class="borderClass1" id="k2" onclick="whenButtonIsClickd(event)">2</button></div>
+					<div class="divButtons"><button class="borderClass1" id="k3" onclick="whenButtonIsClickd(event)">3</button></div>
+					<div class="divButtons"><button class="borderClass1" id="k4" onclick="whenButtonIsClickd(event)">4</button></div>
+					<div class="divButtons"><button class="borderClass1" id="k5" onclick="whenButtonIsClickd(event)">5</button></div>
+					<div class="divButtons"><button class="borderClass1" id="k6" onclick="whenButtonIsClickd(event)">6</button></div>
+					<div class="divButtons"><button class="borderClass1" id="k7" onclick="whenButtonIsClickd(event)">7</button></div>
+					<div class="divButtons"><button class="borderClass1" id="k8" onclick="whenButtonIsClickd(event)">8</button></div>
+					<div class="divButtons"><button class="borderClass1" id="k9" onclick="whenButtonIsClickd(event)">9</button></div>
+					<div class="divButtons"><button class="borderClass2" id="k0" onclick="whenButtonIsClickd(event)">0</button></div>
+				</div>
+				<div class="wholeLine"  id="line3">
+					<div class="divButtons"><button class="borderClass3" id="kQ" onclick="whenButtonIsClickd(event)">q</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kW" onclick="whenButtonIsClickd(event)">w</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kE" onclick="whenButtonIsClickd(event)">e</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kR" onclick="whenButtonIsClickd(event)">r</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kT" onclick="whenButtonIsClickd(event)">t</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kY" onclick="whenButtonIsClickd(event)">y</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kU" onclick="whenButtonIsClickd(event)">u</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kI" onclick="whenButtonIsClickd(event)">i</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kO" onclick="whenButtonIsClickd(event)">i</button></div>
+					<div class="divButtons"><button class="borderClass4" id="kP" onclick="whenButtonIsClickd(event)">o</button></div>
+				</div>
+				<div class="wholeLine" id="line4">
+					<div class="divButtons"><button class="borderClass1" id="kShift" onclick="whenShiftIsClickd()">shift</button></div>
+					<div class="divButtons"><button class="borderClass1" id="kA" onclick="whenButtonIsClickd(event)">a</button></div>
+					<div class="divButtons"><button class="borderClass1" id="kS" onclick="whenButtonIsClickd(event)">s</button></div>
+					<div class="divButtons"><button class="borderClass1" id="kD" onclick="whenButtonIsClickd(event)">d</button></div>
+					<div class="divButtons"><button class="borderClass1" id="kF" onclick="whenButtonIsClickd(event)">f</button></div>
+					<div class="divButtons"><button class="borderClass1" id="kG" onclick="whenButtonIsClickd(event)">g</button></div>
+					<div class="divButtons"><button class="borderClass1" id="kH" onclick="whenButtonIsClickd(event)">h</button></div>
+					<div class="divButtons"><button class="borderClass1" id="kJ" onclick="whenButtonIsClickd(event)">j</button></div>
+					<div class="divButtons"><button class="borderClass1" id="kK" onclick="whenButtonIsClickd(event)">k</button></div>
+					<div class="divButtons"><button class="borderClass2" id="kL" onclick="whenButtonIsClickd(event)">l</button></div>
+				</div>
+				<div class="wholeLine" id="line5">
+					<div class="divButtons"><button class="borderClass3" id="kCtrl">ctrl</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kAlt">alt</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kZ" onclick="whenButtonIsClickd(event)">z</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kX" onclick="whenButtonIsClickd(event)">x</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kC" onclick="whenButtonIsClickd(event)">c</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kV" onclick="whenButtonIsClickd(event)">v</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kB" onclick="whenButtonIsClickd(event)">b</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kN" onclick="whenButtonIsClickd(event)">n</button></div>
+					<div class="divButtons"><button class="borderClass3" id="kM" onclick="whenButtonIsClickd(event)">m</button></div>
+					<div class="divButtons"><button class="borderClass4" id="kEnter" onclick="whenEnterIsClickd(event)">enter</button></div>
+				</div>
+				
+			</div>
+		
+		
+		</body>
+	</html>
