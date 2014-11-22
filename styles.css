@@ -159,7 +159,8 @@
 
     -webkit-animation: firstBall 5s;
 
-    -webkit-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;    -webkit-animation-iteration-count: infinite;
+
 
 }
 
@@ -275,7 +276,8 @@
 
     -webkit-animation: secondBall 5s;
 
-    -webkit-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;    -webkit-animation-iteration-count: infinite;
+
 
 }
 
@@ -391,7 +393,8 @@
 
     -webkit-animation: thirdBall 5s;
 
-    -webkit-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;    -webkit-animation-iteration-count: infinite;
+
 
 }
 
